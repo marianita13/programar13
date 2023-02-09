@@ -1,0 +1,175 @@
+
+#TALLER 2 - EJERCICIOS DE ALGORITMIA ESTRUCTURA CONDICIONAL
+
+# num1=int(input('Digite el primer número: '))
+# num2=int(input('Digite el segundo número: '))
+# print('')
+
+# if (num1>num2):
+#     print(f'Los números de menor a mayor son:\n{num2}\n{num1}')
+# elif (num2>num1):
+#     print(f'Los números de menor a mayor son:\n{num1}\n{num2}')
+# else:
+#     print('Todos los números deben ser diferentes')
+
+####################################################################
+
+# numero=int(input('Digite un número del 1 al 10: '))
+
+# if numero>=1 and numero<=10:
+#     match numero:
+#         case 1:
+#             print('Es impar')
+#         case 2:
+#             print('Es par')
+#         case 3:
+#             print('Es impar')
+#         case 4:
+#             print('Es par')
+#         case 5:
+#             print('Es impar')
+#         case 6:
+#             print('Es par')
+#         case 7:
+#             print('Es impar')
+#         case 8:
+#             print('Es par')
+#         case 9:
+#             print('Es impar')
+#         case 10:
+#             print('Es par')
+# else:
+#     print('El número no está dentro del rango válido')
+
+#################################################################
+
+# numero=int(input('Digite un número del 1 al 10: '))
+
+# if numero>=1 and numero<=10:
+#     match numero:
+#         case 1:
+#             print('1 = uno')
+#         case 2:
+#             print('2 = dos')
+#         case 3:
+#             print('3 = tres')
+#         case 4:
+#             print('4 = cuatro')
+#         case 5:
+#             print('5 = cinco')
+#         case 6:
+#             print('6 = seis')
+#         case 7:
+#             print('7 = siete')
+#         case 8:
+#             print('8 = ocho')
+#         case 9:
+#             print('9 = nueve')
+#         case 10:
+#             print('10 = Diez')
+# else:
+#     print('El número no está dentro del rango válido')
+
+##############################################################
+
+# minutos=int(input('Cuantos minutos duró la llamada? '))
+# print('')
+
+# if minutos<=3:
+#     print('Debes pagar 200 pesos')
+# elif minutos>3:
+#     totalm=(minutos-3)*100
+#     pagar=200+totalm
+#     print(f'Por un total de {minutos} minutos debes pagar {pagar} pesos.')
+
+##################################################################
+
+# c1blancos=int(input('Digite el número de conejos blancos vendidos: '))
+# c2negros=int(input('Digite el número de conejos negros vendidos: '))
+# print('')
+# print(f'EL total de conejos vendidos es {c1blancos+c2negros}')
+# print('')
+
+# p1=float(input('Digite el precio de venta por unidad de los conejos blancos: '))
+# p2=float(input('Digite el precio de venta por unidad de los conejos negros: '))
+# print('')
+# print(f'El monto total por la venta de los conejos es: {(p1*c1blancos)+(p2*c2negros)} dolares')
+# print('')
+
+# if c1blancos>c2negros:
+#     print('Se vendieron más conejos de color blanco')
+# elif c2negros>c1blancos:
+#     print('Se vendieron más conejos de color negro')
+# else:
+#     print('Se vendieron la misma cantidad de conejos blancos y negros')
+
+###############################################################################
+
+# ex1=float(input('Digite la nota del primer exámen: '))
+# ex2=float(input('Digite la nota del segundo exámen: '))
+# ex3=float(input('Digite la nota del tercer exámen: '))
+# trabajo1=float(input('Digite la nota del primer trabajo: '))
+# trabajo2=float(input('Digite la nota del segundo trabajo: '))
+# print('')
+
+# if ex1>=1.0 and ex1<=5.0 and ex2>=1.0 and ex2<=5.0 and ex3>=1.0 and ex3<=5.0 and trabajo1>=1.0 and trabajo1<=5.0 and trabajo2>=1.0 and trabajo2<=5.0:
+#     Nex=((ex1+ex2+ex3)/3)*0.60
+#     Ntrabajos=((trabajo1+trabajo2)/2)*0.40
+#     print(f'La nota final es de {Nex+Ntrabajos}')
+# else:
+#     print('Existe una nota fuera del rango válido')
+
+#####################################################################################
+
+# articulo=str(input('Digite el nombre del artículo: '))
+# precioO=float(input('Digite el valor del artículo: '))
+# cantidad=int(input('Digite la cantidad total a llevar: '))
+# clave=int(input('Digite su clave correspondiente:\n'))
+# print('')
+
+# match clave:
+#     case 1:
+#         descuento=10
+#         precioN=precioO*cantidad
+#         pagar=precioN*0.1
+#     case 2:
+#         descuento=20
+#         precioN=precioO*cantidad
+#         pagar=precioN*0.2
+# print(f'El nombre del artículo es: {articulo}. El precio de oríginal es de {precioO} pesos.\nPor llevar un total de {cantidad} artículos y ser afiliado a nuestra cooperativa\ntiene un descuento del {descuento}%. Dando un total de {precioN-pagar} pesos.')
+
+#######################################################################################################
+
+# presupuestoA=float(input('Digite el valor del presupuesto anual: '))
+# Ppsiquiatria=float(input('Digite el porcentaje para el área de psquiatría: '))
+# Ppediatría=float(input('Digite el porcentaje para el área de pediatría: '))
+# Ptraumatología=float(input('Digite el porcentaje para el área de traumatología: '))
+# print('')
+# TP=Ppsiquiatria+Ppediatría+Ptraumatología
+
+# if TP>=99.8 and TP<=100:
+#     print(f'El porcentaje asignado para psiquiatría es: {Ppsiquiatria}%\ny el presupuesto obtenido es {(presupuestoA*Ppsiquiatria)/100}')
+#     print('')
+#     print(f'El porcentaje asignado para pediatra es: {Ppediatría}%\ny el presupuesto obtenido es {(presupuestoA*Ppediatría)/100}')
+#     print('')
+#     print(f'El porcentaje asignado para traumatología es: {Ptraumatología}%\ny el presupuesto obtenido es {(presupuestoA*Ptraumatología)/100}')
+# else:
+#     print('Error')
+
+#############################################################################################################################
+
+# distancia=float(input('Digite la distancia a recorrer: '))
+# estancia=int(input('Digite el número de días de estancia: '))
+
+# if estancia>=7 and distancia>=800:
+#     descuento=30
+#     precio=distancia*2.5
+#     totaldes=(precio*0.3)
+#     totalt=precio-totaldes
+#     print(f'EL precio del tiquete originalmente es de {precio} dólares pero con el descuento queda por un valor de {totalt} dólares')
+
+# else:
+#     descuento=0
+#     precio=distancia*2.5
+#     print(f'El valor del billete queda por el mismo valor de {precio} dólares')
+
