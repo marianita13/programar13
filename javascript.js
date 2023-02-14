@@ -152,34 +152,130 @@
 // }
 
 
-let parcial1=+prompt('Digite la nota del parcial N°1: ')
-let parcial2=+prompt('Digite la nota del parcial N°2: ')
+// let parcial1=+prompt('Digite la nota del parcial N°1: ')
+// let parcial2=+prompt('Digite la nota del parcial N°2: ')
 
-let promediop=(parcial1*0.3)+(parcial2*0.3)/2
+// let promediop=(parcial1*0.3)+(parcial2*0.3)
 
-if (parcial1<0 || parcial1>5 && parcial2<0 || parcial2>5){
-  console.log('Existen notas fuera del rango.')
-}else{
-  if (promediop<2.0){
-  console.log(`El estudiante no puede presentar el exámen final
-  Pierde la materia por bajo promedio y su nota definitiva es ${promediop}`)
-  }else{
-    let examenf=+prompt('Digite la nota del exámen final: ')
-    if (examenf<0 || examenf>5){
-    console.log('La nota está fuera del rango')
-    }else{
-      if (examenf<2.0){
-      console.log(`El estudiante reprobó el exámen final y su definitiva es de: ${examenf}`)
-      }else{
-        let promedio=(parcial1*0.3)+(parcial2*0.3)+(examenf*0.4)/3
-        if (promedio>=3.0){
-          console.log(`El estudiante aprueba la materia con una nota de ${promedio}`)
-        }else{
-          if (examenf>=2.0){
-            
-          }
-        }
-      }
-    }
-  }
-}
+// if (parcial1<0 || parcial1>5 && parcial2<0 || parcial2>5){
+//   console.log('Existen notas fuera del rango.')
+// }else{
+//   if (promediop<2.0){
+//   console.log(`El estudiante no puede presentar el exámen final
+//   Pierde la materia por bajo promedio y su nota definitiva es ${promediop}`)
+//   }else{
+//     let examenf=+prompt('Digite la nota del exámen final: ')
+//     if (examenf<0 || examenf>5){
+//     console.log('La nota está fuera del rango')
+//     }else{
+//       if (examenf<2.0){
+//       console.log(`El estudiante reprobó el exámen final y su definitiva es de: ${examenf}`)
+//       }else{
+//         let promedio=(parcial1*0.3)+(parcial2*0.3)+(examenf*0.4)
+//         if (promedio>=3.0){
+//           console.log(`El estudiante aprueba la materia con una nota de ${promedio}`)
+//         }else{
+//           if (examenf>=2.0){
+//             let habilitacion=+prompt('Digite la nota de la habilitación: ')
+//             console.log(`La nota definitiva es de ${habilitacion}`)
+//           }else{
+//             console.log(`Reprueba la materia con una nota de ${promedio}`)
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// for (let x=1;x<=10;x++)
+//   console.log(x)
+
+// let x=0
+
+// while(x<=10){
+//   console.log(x+1)
+//   x+=1
+// }
+
+// let x=1
+// do{
+//   console.log(x)
+//   x++
+// }while (x<=10)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// for (let x=0;x<=25;x++)
+//   console.log(x*11)
+
+// let x=0
+
+// while(x<=500){
+//   console.log(x)
+//   x+=8
+// }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// let num1=+prompt('Digite el primer número: ')
+// let num2=+prompt('Digite el segundo número: ')
+
+// if (num1>num2){
+//   for (a=num2;a<=num1;a++){
+//   if (a%2==0){
+//   console.log(a)}
+//   }
+// }else if (num2>num1){
+//   for (a=num1;a<=num2;a++){
+//   if (a%2==0){
+//   console.log(a)}
+//   }
+// }else if(num1==num2){
+//   console.log('Los números son iguales')
+// }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let numeros=0
+// let suma=0
+
+// while(numeros!=9999){
+//   suma+=numeros
+//   numeros=+prompt('Digite los números que desea sumar: ')
+// }
+// console.log(suma)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// let numeros=[]
+// let numero=1
+// let suma=0
+// let contador=0
+
+// while (numero!=0){
+//   numero=+prompt('Digita el número: ')
+//   if (numero!=0){
+//     numeros.push(numero)
+//     suma+=numero
+//     contador+=1
+// }
+// }
+// let maximo=(Math.max.apply(null,numeros))
+// let minimo=(Math.min.apply(null,numeros))
+// let media=(suma/contador)
+// console.log(`EL número mayor es ${maximo}.
+// El número menor es: ${minimo}.
+// La media es: ${media}`)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// for (i=1;i<=100;i++){
+//   if (i%2==0 && i%3==0){
+//     console.log(i)
+//   }
+// } 
+
+////////////////////////////////////////////////////////////////////7
+

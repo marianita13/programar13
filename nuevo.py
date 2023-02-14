@@ -144,13 +144,13 @@
 #     suma=suma+num
 #     num=int(input('Digita un número: '))
 # print(suma)
-#############################################################################
-
 # if suma>0:
 #     print('El resultado es mayor a 0')
 # elif suma<0:
 # elif suma==0:
 #     print('EL resultado es igual a 0')
+
+######################################################################
 
 # numE=int(input('Digita un número entero: '))
 # maximo=-999999
