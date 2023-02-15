@@ -277,5 +277,36 @@
 //   }
 // } 
 
-////////////////////////////////////////////////////////////////////7
+////////////////////////////////////////////////////////////////////
+
+// alert('Hola mundo')
+
+// prompt('Digita algo: ')
+
+// confirm('Si o no?: ')
+
+///////////////////////////////////////////////////////////////////////////////
+
+// let dividendo=+prompt('Digite el dividendo: ')
+// let divisor=+prompt('Digite el divisor: ')
+// let cociente=dividendo
+// let a=0
+
+// if (divisor==0){
+//     console.log('El cociente es 0 y el residuo es 0');
+// }else{
+// while (cociente>=divisor){
+//     cociente-=divisor
+//     a+=1
+// }
+// }
+// console.log(`El cociente es ${a} y el residuo es ${dividendo-(divisor*a)}`)
+
+// const numeros=[]
+// for (i=0;i<50;i++){
+//     numeros.push(i+1)
+// }
+// console.log(numeros);
+
+
 
