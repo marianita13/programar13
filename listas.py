@@ -205,37 +205,37 @@
 
 ########################################################################################
 
-# usuario=['pepito89','supermangui','esparnancacion']
-# contraseñas=['123456','password','qwerty123']
-# cont=0
-# lug=0
-# oportunidades=3
-# usert=False
-# passwt=False
+usuario=['pepito89','supermangui','esparnancacion']
+contraseñas=['123456','password','qwerty123']
+cont=0
+lug=0
+oportunidades=3
+usert=False
+passwt=False
 
-# while usert==False or passwt==False:
-#     user=str(input('Digite su usuario: '))
-#     password=str(input('Digite su contraseña: '))
-#     user=user.lower()
+while usert==False or passwt==False:
+    user=str(input('Digite su usuario: '))
+    password=str(input('Digite su contraseña: '))
+    user=user.lower()
 
-#     for u in (usuario):
-#         if user==u:
-#             usert=True
-#             lug=user.index(u)
-#     cont=0
-#     for c in (contraseñas):
-#         if password==c and lug==cont:
-#             passwt=True
-#         cont+=1
+    for u in (usuario):
+        if user==u:
+            usert=True
+            lug=user.index(u)
+    cont=0
+    for c in (contraseñas):
+        if password==c and lug==cont:
+            passwt=True
+        cont+=1
 
-#     if usert==True and passwt==True:
-#         print('Bienvenido')
-#         break
-#     else:
-#         print('Intentalo de nuevo')
-#         oportunidades+=1
-#         if oportunidades==3:
-#             print('No tienes más intentos')
+    if usert==True and passwt==True:
+        print('Bienvenido')
+        break
+    else:
+        print('Intentalo de nuevo')
+        oportunidades+=1
+        if oportunidades==3:
+            print('No tienes más intentos')
 
 #########################################################################################
 
@@ -345,72 +345,72 @@
 
 ################################################################################################
 
-Todo=[[],[],[],[],[],[],[],[]]
+# Todo=[[],[],[],[],[],[],[],[]]
 
-nombresT=int(input('Digite el número de estudiantes a calcular: '))
+# nombresT=int(input('Digite el número de estudiantes a calcular: '))
 
-for i in range(nombresT):
-    nombre=str(input(f'Digite el NOMBRE del estudiante N°{i+1}: '))
-    Todo[0].append(nombre)
+# for i in range(nombresT):
+#     nombre=str(input(f'Digite el NOMBRE del estudiante N°{i+1}: '))
+#     Todo[0].append(nombre)
 
-    genero=str(input(f'Digite el GÉNERO [F(femenino) o M(masculino)] del estudiante N°{i+1}: ')).lower()
-    while genero!='f' and genero!='m':
-        print('Digite el género correctamente.')
-        genero=str(input(f'Digite el GÉNERO [F(femenino) o M(masculino)] del estudiante N°{i+1}: ')).lower()
-    else:
-        Todo[1].append(genero)
+#     genero=str(input(f'Digite el GÉNERO [F(femenino) o M(masculino)] del estudiante N°{i+1}: ')).lower()
+#     while genero!='f' and genero!='m':
+#         print('Digite el género correctamente.')
+#         genero=str(input(f'Digite el GÉNERO [F(femenino) o M(masculino)] del estudiante N°{i+1}: ')).lower()
+#     else:
+#         Todo[1].append(genero)
 
-    curso=int(input(f'Digite el CURSO del estudiante N°{i+1}: '))
-    while curso<1 or curso>11:
-        print('Digita el curso correctamente.')
-        curso=int(input(f'Digite el CURSO del estudiante N°{i+1}: '))
-    else:
-        Todo[2].append(curso)
+#     curso=int(input(f'Digite el CURSO del estudiante N°{i+1}: '))
+#     while curso<1 or curso>11:
+#         print('Digita el curso correctamente.')
+#         curso=int(input(f'Digite el CURSO del estudiante N°{i+1}: '))
+#     else:
+#         Todo[2].append(curso)
 
-for x in Todo[0]:
-    notam=float(input(f'Digite la nota final de matematicas de {x}: '))
-    while notam<0 or notam>5:
-        print('Digite la nota correctamente')
-        notam=float(input(f'Digite la nota final de matematicas de {x}: '))
-    else:
-        Todo[3].append(notam)
+# for x in Todo[0]:
+#     notam=float(input(f'Digite la nota final de matematicas de {x}: '))
+#     while notam<0 or notam>5:
+#         print('Digite la nota correctamente')
+#         notam=float(input(f'Digite la nota final de matematicas de {x}: '))
+#     else:
+#         Todo[3].append(notam)
 
-    notai=float(input(f'Digite la nota final de inglés de {x}: '))
-    while notai<0 or notai>5:
-        print('Digite la nota correctamente')
-        notai=float(input(f'Digite la nota final de inglés de {x}: '))
-    else:
-        Todo[4].append(notai)
+#     notai=float(input(f'Digite la nota final de inglés de {x}: '))
+#     while notai<0 or notai>5:
+#         print('Digite la nota correctamente')
+#         notai=float(input(f'Digite la nota final de inglés de {x}: '))
+#     else:
+#         Todo[4].append(notai)
 
-    notaq=float(input(f'Digite la nota final de química de {x}: '))
-    while notaq<0 or notaq>5:
-        print('Digite la nota correctamente')
-        notaq=float(input(f'Digite la nota final de química de {x}: '))
-    else:
-        Todo[5].append(notaq)
+#     notaq=float(input(f'Digite la nota final de química de {x}: '))
+#     while notaq<0 or notaq>5:
+#         print('Digite la nota correctamente')
+#         notaq=float(input(f'Digite la nota final de química de {x}: '))
+#     else:
+#         Todo[5].append(notaq)
 
-for co in range(nombresT):
-    suma2=0
-    for fi in range(3,6):
-        suma2+=Todo[fi][co]
-    suma2=suma2/3
-    Todo[6].append(suma2)
+# for co in range(nombresT):
+#     suma2=0
+#     for fi in range(3,6):
+#         suma2+=Todo[fi][co]
+#     suma2=suma2/3
+#     Todo[6].append(suma2)
 
-for m in Todo[6]:
-    if m>=3.5:
-        Todo[7].append('Aprobó')
-    else:
-        Todo[7].append('reprobó')
+# for m in Todo[6]:
+#     if m>=3.5:
+#         Todo[7].append('Aprobó')
+#     else:
+#         Todo[7].append('reprobó')
 
-for fila in range(len(Todo)):
-    print('[',end='') 
-    for columna in range(len(Todo[fila])):
-        if columna<len(Todo[fila])-1: 
-            print(Todo[fila][columna],end='\t ')
-        else:
-            print(Todo[fila][columna],end='') 
-    print(']',end='') 
-    print('')
+# for fila in range(len(Todo)):
+#     print('[',end='') 
+#     for columna in range(len(Todo[fila])):
+#         if columna<len(Todo[fila])-1: 
+#             print(Todo[fila][columna],end='\t ')
+#         else:
+#             print(Todo[fila][columna],end='') 
+#     print(']',end='') 
+#     print('')
 
 ################################################################################################################
 
