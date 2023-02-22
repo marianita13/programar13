@@ -13,6 +13,7 @@ const fecha=document.getElementById('fecha')
 const insertar=document.getElementById('insert')
 const mostrarNombres=document.getElementById('mNombres')
 const mostrarEdades=document.getElementById('mEdades')
+const porcentajesGeneros=document.getElementById('porcentaje')
 
 insertar.addEventListener('click',()=>{
     let name=nombre.value
@@ -48,21 +49,41 @@ mostrarNombres.addEventListener('click',function(){
 
 mostrarEdades.addEventListener('click',ages)
 function ages(){
-    let adultosmayores=personas.filter(e=> e.edad>=50).map(el => el.nombre)
-    let adultos=personas.filter(e=> e.edad>=18 && e.edad<50).map(el => el.nombre)
-    let niños=personas.filter(e=> e.edad<18).map(el => el.nombre)
+    let adultosMayores=personas.filter(el=>el.edad>=50).map(el=>el.nombre)
+    let adultos=personas.filter(el=>el.edad>18 && el.edad<50).map(el=>el.nombre)
+    let kids=personas.filter(el=>el.edad<18).map(el=>el.nombre)
 
-    let contenido=`Adultos mayores<br>`
-    adultosmayores.forEach(nombre=>{
-        contenido+=`${nombre}<br>`
-    })
-    contenido+=`<br>Adultos<br>`
-    adultos.forEach(nombre=>{
-        contenido+=`${nombre}<br>`
-    })
-    contenido+=`<br>Niños<br>`
-    niños.forEach(nombre=>{
-        contenido+=`${nombre}<br>`
-    })
-    document.getElementById('pantalla').innerHTML=contenido
+    let contenido=''
+    contenido+=`<table><th>Adultos Mayores</th><th>Adultos</th><th>Kids</th>`
+    let total=[adultosMayores.length,adultos.length,kids.length]
+    total=Math.max(...total)
+
+    for(i=0;i<total;i++){
+        let Tadultosmayores=''
+        let Tadultos=''
+        let Tkids=''
+        if (adultosMayores[i]==null){
+            Tadultosmayores=' '
+        }else{
+            Tadultosmayores=Tadultosmayores[i]
+        }
+        if (adultos[i]==null){
+            Tadultos=' '
+        }else{
+            Tadultos=Tadultos[i]
+        }
+        if (kids[i]==null){
+            Tkids=' '
+        }else{
+            Tkids=Tkids[i]
+        }
+        contenido+=`<tr><td>${Tadultosmayores}</td><td>${Tadultos}</td><td>${Tkids}</td></tr>`
+    }
+contenido+=`</table>`
+document.getElementById('pantalla').innerHTML=contenido
 }
+
+porcentajesGeneros.addEventListener('click',()=>{
+    let femenino=x
+    let masculino=y
+})
