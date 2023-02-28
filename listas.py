@@ -172,22 +172,22 @@
 
 #######################################################################################
 
-# arreglo=[1,0,4,8,5,7,6,8,7,5,6,4,3,1,9,2,7]
-# repetidos=[]
-# contador=0
-# numero=int(input('Digita un número del 1 al 10: '))
+arreglo=[1,0,4,8,5,7,6,8,7,5,6,4,3,1,9,2,7]
+repetidos=[]
+contador=0
+numero=int(input('Digita un número del 1 al 10: '))
 
-# if numero in arreglo:
-#     cont=arreglo.count(numero)
-#     psc=arreglo.index(numero)
-#     if cont>1:
-#         for m in arreglo:
-#             if m==numero:
-#                 repetidos.append(contador)
-#             contador+=1
-#         print(f'El número se encuentra en la posición {repetidos}')
-#     else:
-#         print(f'EL número solo se encuentra en la posición {psc}')
+if numero in arreglo:
+    cont=arreglo.count(numero)
+    psc=arreglo.index(numero)
+    if cont>1:
+        for m in arreglo:
+            if m==numero:
+                repetidos.append(contador)
+            contador+=1
+        print(f'El número se encuentra en la posición {repetidos}')
+    else:
+        print(f'EL número solo se encuentra en la posición {psc}')
 
 ########################################################################################
 
@@ -205,37 +205,37 @@
 
 ########################################################################################
 
-usuario=['pepito89','supermangui','esparnancacion']
-contraseñas=['123456','password','qwerty123']
-cont=0
-lug=0
-oportunidades=3
-usert=False
-passwt=False
+# usuario=['pepito89','supermangui','esparnancacion']
+# contraseñas=['123456','password','qwerty123']
+# cont=0
+# lug=0
+# oportunidades=3
+# usert=False
+# passwt=False
 
-while usert==False or passwt==False:
-    user=str(input('Digite su usuario: '))
-    password=str(input('Digite su contraseña: '))
-    user=user.lower()
+# while usert==False or passwt==False:
+#     user=str(input('Digite su usuario: '))
+#     password=str(input('Digite su contraseña: '))
+#     user=user.lower()
 
-    for u in (usuario):
-        if user==u:
-            usert=True
-            lug=user.index(u)
-    cont=0
-    for c in (contraseñas):
-        if password==c and lug==cont:
-            passwt=True
-        cont+=1
+#     for u in (usuario):
+#         if user==u:
+#             usert=True
+#             lug=user.index(u)
+#     cont=0
+#     for c in (contraseñas):
+#         if password==c and lug==cont:
+#             passwt=True
+#         cont+=1
 
-    if usert==True and passwt==True:
-        print('Bienvenido')
-        break
-    else:
-        print('Intentalo de nuevo')
-        oportunidades+=1
-        if oportunidades==3:
-            print('No tienes más intentos')
+#     if usert==True and passwt==True:
+#         print('Bienvenido')
+#         break
+#     else:
+#         print('Intentalo de nuevo')
+#         oportunidades+=1
+#         if oportunidades==3:
+#             print('No tienes más intentos')
 
 #########################################################################################
 
